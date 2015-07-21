@@ -1,0 +1,40 @@
+html,body {
+    width: 100%;
+    height: 100%;
+    background-color: #7BE6FF;
+    position: relative;
+}
+
+.cloud {
+    position: absolute;
+    -webkit-animation: float linear backwards infinite;
+}
+
+.cloud-1 {
+    width: 400px;
+    top: 20%;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-duration: 50s;
+}
+
+.cloud-2 {
+    width: 200px;
+    top: 50%;
+    -webkit-animation-duration: 20s;
+}
+
+.cloud-3 {
+    width: 300px;
+    top: 40%;
+    -webkit-animation-delay: 3s;
+    -webkit-animation-duration: 30s;
+}
+
+@-webkit-keyframes float {
+    from {
+        left: -500px;
+        }
+    to {
+        left: 100%;
+    }
+}
