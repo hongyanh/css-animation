@@ -7,30 +7,46 @@ html,body {
 
 .cloud {
     position: absolute;
+    left: -500px;
     -webkit-animation: float linear backwards infinite;
+    animation: float linear backwards infinite;
 }
 
 .cloud-1 {
     width: 400px;
     top: 20%;
     -webkit-animation-delay: 2s;
+    animation-delay: 2s;
     -webkit-animation-duration: 50s;
+    animation-duration: 50s;
 }
 
 .cloud-2 {
     width: 200px;
     top: 50%;
     -webkit-animation-duration: 20s;
+    animation-duration: 20s;
 }
 
 .cloud-3 {
     width: 300px;
     top: 40%;
     -webkit-animation-delay: 3s;
+    animation-delay: 3s;
     -webkit-animation-duration: 30s;
+    animation-duration: 30s;
 }
 
 @-webkit-keyframes float {
+    from {
+        left: -500px;
+        }
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes float {
     from {
         left: -500px;
         }
